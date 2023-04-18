@@ -9,12 +9,11 @@ public class FleetOfCars {
 
     public int getTotalRegistrationFeeForFleet(){
         int sumOfTotalFeeForFleet = 0;
-
-        for(Car f: fleet) {
-            int fee = fleet.get(1).getRegistrationFee();
+        for (Car car : fleet) {
+            int fee = car.getRegistrationFee();
             sumOfTotalFeeForFleet += fee;
         }
-        System.out.println("The total amoun of registration for alle cars is: "+sumOfTotalFeeForFleet);
+        System.out.println("The total registration fee for all cars is: "+sumOfTotalFeeForFleet);
         return sumOfTotalFeeForFleet;
     }
 }

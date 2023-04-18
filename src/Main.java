@@ -15,15 +15,16 @@ public class Main {
 
         FleetOfCars cars = new FleetOfCars();
 
-        cars.fleet.add(a);
-        cars.fleet.add(b);
-        cars.fleet.add(c);
-        cars.fleet.add(d);
-        cars.fleet.add(e);
-        cars.fleet.add(f);
-        cars.fleet.add(g);
-        cars.fleet.add(h);
-        cars.fleet.add(i);
+        cars.addCar(a);
+        cars.addCar(a);
+        cars.addCar(b);
+        cars.addCar(c);
+        cars.addCar(d);
+        cars.addCar(e);
+        cars.addCar(f);
+        cars.addCar(g);
+        cars.addCar(h);
+        cars.addCar(i);
 
         for (int x = 0 ; x< cars.fleet.size(); x++) {
             System.out.println(cars.fleet.get(x).toString());
